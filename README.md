@@ -29,7 +29,6 @@ O código será dividido em quatro classes principais:
 
 Um exemplo de estado inicial e objetivo pode ser:
 
-```java
 int[][] initialState = {
     {1, 2, 3},
     {4, 0, 5},
@@ -51,3 +50,15 @@ Número de nós gerados com cópia: 50
 Solução encontrada com modificação direta!
 Tempo de execução com modificação direta: 1500000 ns
 Número de nós gerados com modificação direta: 30
+
+---
+
+## Interpretação dos Resultados da Atividade
+
+### Desempenho
+A análise de desempenho indica qual das duas versões foi mais rápida em nanosegundos. Geralmente, a versão que modifica o estado diretamente tende a ser mais eficiente, pois evita a criação de cópias, reduzindo o uso de memória e processamento.
+
+### Comportamento
+Ambas as versões devem ser capazes de encontrar a solução, mas a versão que faz cópias oferece maior segurança, evitando modificações não intencionais no estado do nó pai.
+
+
