@@ -11,5 +11,10 @@ public class Main {
             {4, 5, 0},
             {6, 7, 8}
         };
+
+        PuzzleState initial = new PuzzleState(initialState);
+        PuzzleState goal = new PuzzleState(goalState);
+        Node root = new Node(initial, null, 0, null);
+
     };
 };
